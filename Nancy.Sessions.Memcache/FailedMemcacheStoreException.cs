@@ -2,7 +2,7 @@
 using System;
 using System.Runtime.Serialization;
 
-namespace Nancy.Session.Memcache
+namespace Nancy.Sessions.Memcache
 {
     [Serializable]
     public class FailedMecacheStoreException : Exception

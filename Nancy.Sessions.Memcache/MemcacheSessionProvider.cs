@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using Enyim.Caching.Memcached;
 using Nancy.Cookies;
+using Nancy.Session;
 using Newtonsoft.Json;
 
-namespace Nancy.Session.Memcache
+namespace Nancy.Sessions.Memcache
 {
     public class MemcacheSessionProvider : ISessionProvider
     {
@@ -33,10 +34,10 @@ namespace Nancy.Session.Memcache
             var token = MemcacheTokenFromCookie(context);
             if (String.IsNullOrEmpty(token))
             {
-                var session = new Session();
+                var session = new Session.Session();
                 OnSessionStart(session);
             }
-            return new Session(LoadFromMemcache(token));
+            return new Session.Session(LoadFromMemcache(token));
         }
 
         public IDictionary<string, object> LoadFromMemcache(string key)

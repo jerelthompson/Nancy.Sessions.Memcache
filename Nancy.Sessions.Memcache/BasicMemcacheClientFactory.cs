@@ -1,7 +1,7 @@
-﻿
-using Enyim.Caching;
+﻿using Enyim.Caching;
+using Nancy.Sessions.Memcache;
 
-namespace Nancy.Session.Memcache
+namespace Nancy.Sessions.Memcache
 {
     class BasicMemcacheClientFactory : IMemcacheClientFactory
     {

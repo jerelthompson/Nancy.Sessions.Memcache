@@ -7,8 +7,8 @@
     <ProjectGuid>{A746B9EA-4197-4BEF-A44D-9026042C03E3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Nancy.Session.Memcache</RootNamespace>
-    <AssemblyName>Nancy.Session.Memcache</AssemblyName>
+    <RootNamespace>Nancy.Sessions.Memcache</RootNamespace>
+    <AssemblyName>Nancy.Sessions.Memcache</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

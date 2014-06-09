@@ -1,6 +1,6 @@
 ﻿using Enyim.Caching;
 
-namespace Nancy.Session.Memcache
+namespace Nancy.Sessions.Memcache
 {
     public interface IMemcacheClientFactory
     {
