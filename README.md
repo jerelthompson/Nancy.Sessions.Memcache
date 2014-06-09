@@ -12,7 +12,10 @@ public class Bootstrapper : DefaultNancyBootstrapper
     {
         base.ApplicationStartup(container, pipelines);
         var sessionManager = new SessionManager(
-            new MemcacheSessionProvider("SessionId","MyApplication-Sessions-")
+            new MemcacheSessionProvider(
+                "SessionId",               // Cookie name
+                "MyApplication-Sessions-"  // Memcache prefix
+            )
         );
         sessionManager.Run(pipelines);
     }
