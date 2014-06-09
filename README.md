@@ -11,10 +11,10 @@ public class Bootstrapper : DefaultNancyBootstrapper
     protected override void ApplicationStartup(TinyIoCContainer container, IPipelines pipelines)
     {
         base.ApplicationStartup(container, pipelines);
-	var sessionManager = new SessionManager(
-	  new MemcacheSessionProvider("SessionId","MyApplication-Sessions-")
-	);
-	sessionManager.Run(pipelines);
+        var sessionManager = new SessionManager(
+            new MemcacheSessionProvider("SessionId","MyApplication-Sessions-")
+        );
+        sessionManager.Run(pipelines);
     }
 }
 ```
